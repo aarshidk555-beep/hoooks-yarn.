@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hooks & Yarns - Products</title>
+
+    <style>
+        .nav-link:hover{        
+            color: #ffffff !important;
+             
+
+        }
+        .product-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
+        }
+        .product-box {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .sell-btn:hover {
+            background-color: #8b4b5f !important;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body bgcolor="#f5d5d5" style="margin: 0; font-family: Arial, sans-serif;"  style="position: relative; overflow-x: hidden;">
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.4;">
+        <span style="position: absolute; top: 10%; left: 5%; font-size: 40px;">🧶</span>
+        <span style="position: absolute; top: 25%; left: 85%; font-size: 35px;">🪡</span>
+        <span style="position: absolute; top: 40%; left: 15%; font-size: 30px;">🧵</span>
+        <span style="position: absolute; top: 15%; left: 70%; font-size: 45px;">🧶</span>
+        <span style="position: absolute; top: 55%; left: 80%; font-size: 38px;">🪡</span>
+        <span style="position: absolute; top: 70%; left: 10%; font-size: 42px;">🧶</span>
+        <span style="position: absolute; top: 35%; left: 90%; font-size: 33px;">🧵</span>
+        <span style="position: absolute; top: 80%; left: 75%; font-size: 36px;">🧶</span>
+        <span style="position: absolute; top: 60%; left: 50%; font-size: 40px;">🪡</span>
+        <span style="position: absolute; top: 20%; left: 40%; font-size: 35px;">🧵</span>
+        <span style="position: absolute; top: 85%; left: 30%; font-size: 38px;">🧶</span>
+        <span style="position: absolute; top: 45%; left: 65%; font-size: 32px;">🪡</span>
+        <span style="position: absolute; top: 75%; left: 55%; font-size: 37px;">🧵</span>
+        <span style="position: absolute; top: 30%; left: 25%; font-size: 34px;">🧶</span>
+        <span style="position: absolute; top: 90%; left: 60%; font-size: 39px;">🪡</span>
+    </div>
+    <div style="position: relative; z-index: 1;">
+
+
+    <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#f5d5d5"
+        style="border-bottom: 3px solid #8b4b5f;">
+        <tr>
+            <td align="left" style="padding: 20px;">
+                <h1 style="color: #8b4b5f; margin: 0;">
+                    Hooks & Yarns<span style="font-size: 55px; margin-left: 10px;">🧶</span>
+                </h1>
+                <p style="color:#8b4b5f ; font-style: italic ; margin: 5px 0 10px 0;">
+                    Handcrafted with Love
+                </p>
+            </td>
+
+             <td align="center" style="padding: 25px;">
+                <p style="margin: 5px 0;">
+                    <a href="home.html" class="nav-link" style="color: #8b4b5f; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 30px;">Home</a>
+                    <span style="color: #8b4b5f; font-size: 30px; font-weight: bold;">|</span>
+                    <a href="products.html"class="nav-link" style="color: #8b4b5f; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 30px;">Products</a>
+                    <span style="color: #8b4b5f; font-size: 30px; font-weight: bold;">|</span>
+                    <a href="about.html" class="nav-link" style="color: #8b4b5f; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 30px;">About</a>
+                    <span style="color: #8b4b5f; font-size: 30px; font-weight: bold;">|</span>
+                    <a href="account.php" class="nav-link" style="color: #8b4b5f; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 30px;">Account</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    
+
+    <h2 style="
+        color:#8b4b5f;
+        font-size:45px;
+        font-weight:bold;
+        padding:15px 40px;
+        text-align: center;
+    ">
+        Products
+    </h2>
+
+
+
+    <table width="85%" align="center" cellspacing="50"> 
+        <tr>
+            <td align="center" width="50%">
+                <div class="product-box"
+                    style="background:#ffffff; border:2px solid #8b4b5f; 
+                           padding:20px; border-radius:15px; 
+                           width:80%; height:250px;   /* normal size */
+                           display:flex; flex-direction:column; 
+                           justify-content:center; align-items:center;
+                           font-size:24px; font-weight:bold; 
+                           color:#8b4b5f; cursor:pointer;">
+                           
+                    <a href="patterns.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLkhOw3oyt1wLFzc3k8nISTt0aGDFt64zkVA&s"
+                         style="width:300px; height:240px;border-radius:10px; margin-bottom:10px;"></a>
+                     Pattern
+                </div>
+            </td>
+
+            <td align="center" width="50%">
+                <div class="product-box"
+                    style="background:#ffffff; border:2px solid #8b4b5f; 
+                           padding:20px; border-radius:15px; 
+                           width:80%; height:250px;
+                           display:flex; flex-direction:column; 
+                           justify-content:center; align-items:center;
+                           font-size:24px; font-weight:bold; 
+                           color:#8b4b5f; cursor:pointer;">
+                    <a href="hooks.html">
+                    <img src="https://media.istockphoto.com/id/1270649618/photo/crochet-needles.jpg?s=612x612&w=0&k=20&c=SHhS6K472Ggg9-2mDwiAI6l_hAeqMRU-suzbvJSrdlY="
+                         style="width:300px; height:240px; border-radius:10px; margin-bottom:10px;">
+                   </a> Hooks
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <div class="product-box"
+                    style="background:#ffffff; border:2px solid #8b4b5f; 
+                           padding:20px; border-radius:15px; 
+                           width:80%; height:250px;
+                           display:flex; flex-direction:column; 
+                           justify-content:center; align-items:center;
+                           font-size:24px; font-weight:bold; 
+                           color:#8b4b5f; cursor:pointer;">
+                    <a href="yarns.html">
+                    <img src="just.jpg"
+                         style="width:250px; height:275 border-radius:10px; margin-bottom:10px;"></a>
+                    Yarns
+                </div>
+            </td>
+
+            <td align="center">
+                <div class="product-box"
+                    style="background:#ffffff; border:2px solid #8b4b5f; 
+                           padding:20px; border-radius:15px; 
+                           width:80%; height:250px;
+                           display:flex; flex-direction:column; 
+                           justify-content:center; align-items:center;
+                           font-size:24px; font-weight:bold; 
+                           color:#8b4b5f; cursor:pointer;">
+                    <a href="goods.html">
+                    <img src="https://c02.purpledshub.com/uploads/sites/51/2021/08/best-crochet-accessories-7f15948.jpg"
+                         style="width:300px; height:225px; border-radius:10px; margin-bottom:10px;">
+                   </a>  Other Items
+                </div>
+            </td>
+        </tr>
+
+       
+    </table>
+
+    <br>
+
+    <div style="text-align:center;">
+        <a class="sell-btn" 
+           href="account.php"
+           style="font-size:30px; font-weight:bold; color:#8b4b5f; 
+                  text-decoration:none; border:2px solid #8b4b5f; 
+                  padding:15px 35px; border-radius:50px;">
+            Want to sell with us ??
+        </a>
+    </div>
+
+    <br><br>
+
+    
+    <div style="background-color:#8b4b5f; color:white; text-align:center; padding:20px; font-size:20px;">
+        © 2025 Hooks & Yarns | Crafted with Love 🧶
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hooks & Yarns - Products</title>
+
+    <style>
+        .nav-link:hover{        
+            color: #ffffff !important;
+             
+
+        }
+        .product-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
+        }
+        .product-box {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .sell-btn:hover {
+            background-color: #8b4b5f !important;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body bgcolor="#f5d5d5" style="margin: 0; font-family: Arial, sans-serif;"  style="position: relative; overflow-x: hidden;">
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.4;">
+        <span style="position: absolute; top: 10%; left: 5%; font-size: 40px;">🧶</span>
+        <span style="position: absolute; top: 25%; left: 85%; font-size: 35px;">🪡</span>
+        <span style="position: absolute; top: 40%; left: 15%; font-size: 30px;">🧵</span>
+        <span style="position: absolute; top: 15%; left: 70%; font-size: 45px;">🧶</span>
+        <span style="position: absolute; top: 55%; left: 80%; font-size: 38px;">🪡</span>
+        <span style="position: absolute; top: 70%; left: 10%; font-size: 42px;">🧶</span>
+        <span style="position: absolute; top: 35%; left: 90%; font-size: 33px;">🧵</span>
+        <span style="position: absolute; top: 80%; left: 75%; font-size: 36px;">🧶</span>
+        <span style="position: absolute; top: 60%; left: 50%; font-size: 40px;">🪡</span>
+        <span style="position: absolute; top: 20%; left: 40%; font-size: 35px;">🧵</span>
+        <span style="position: absolute; top: 85%; left: 30%; font-size: 38px;">🧶</span>
+        <span style="position: absolute; top: 45%; left: 65%; font-size: 32px;">🪡</span>
+        <span style="position: absolute; top: 75%; left: 55%; font-size: 37px;">🧵</span>
+        <span style="position: absolute; top: 30%; left: 25%; font-size: 34px;">🧶</span>
+        <span style="position: absolute; top: 90%; left: 60%; font-size: 39px;">🪡</span>
+    </div>
+    <div style="position: relative; z-index: 1;">
+
+
+    <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#f5d5d5"
+        style="border-bottom: 3px solid #8b4b5f;">
+        <tr>
+            <td align="left" style="padding: 20px;">
+                <h1 style="color: #8b4b5f; margin: 0;">
+                    Hooks & Yarns<span style="font-size: 55px; margin-left: 10px;">🧶</span>
+                </h1>
+                <p style="color:#8b4b5f ; font-style: italic; margin: 5px 0 10px 0;">
+                    Handcrafted with Love
+                </p>
+            </td>
+
+            <td align="center" style="padding: 25px;">
+               <p style="margin: 5px 0;">
+                    <a href="file:///C:/Users/Acer/Desktop/website/home.html" class="nav-link" style="color: #8b4b5f; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 30px;">Home</a>
+                    <span style="color: #8b4b5f; font-size: 30px; font-weight: bold;">|</span>
+                    <a href="file:///C:/Users/Acer/Desktop/website/product%20(1).html"class="nav-link" style="color: #8b4b5f; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 30px;">Products</a>
+                    <span style="color: #8b4b5f; font-size: 30px; font-weight: bold;">|</span>
+                    <a href="file:///C:/Users/Acer/Desktop/website/about.html" class="nav-link" style="color: #8b4b5f; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 30px;">About</a>
+                    <span style="color: #8b4b5f; font-size: 30px; font-weight: bold;">|</span>
+                    <a href="file:///C:/Users/Acer/Desktop/website/login.html" class="nav-link" style="color: #8b4b5f; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 30px;">Account</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <style>
+    /* Simple slider */
+    .slider-container {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 10px;
+        border: 2px solid #8b4b5f;
+    }
+
+    .slides {
+        display: flex;
+        width: 500px; 
+        transition: transform 0.5s ease;
+    }
+
+    .slides img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .small-product-box:hover {
+        transform: scale(1.02);
+    }
+</style>
+<style>
+    .slider-container {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 10px;
+        border: 2px solid #8b4b5f;
+    }
+
+    .slides img {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+        background-color: white;
+        padding: 5px;
+    }
+</style>
+
+
+
+<div style="display:flex; justify-content:center; gap:30px; 
+            padding:20px; margin-top:30px;">
+
+    
+    <div class="small-product-box" 
+         style="width:260px; padding:10px;">
+
+        <div class="slider-container" id="sliderBox">
+            <div class="slides" id="slideImages">
+                <img src="soft1.webp">
+                <img src="soft2.jpg">
+        </div>
+
+        <!-- Simple Buttons -->
+        <div style="text-align:center; margin-top:10px;">
+            <button onclick="moveSlide(0)" 
+                style="background:#8b4b5f; color:white; border:none; padding:5px 15px; border-radius:10px;">
+                1
+            </button>
+
+            <button onclick="moveSlide(1)" 
+                style="background:#8b4b5f; color:white; border:none; padding:5px 15px; border-radius:10px;">
+                2
+            </button>
+        </div>
+    </div>
+
+
+    <!-- RIGHT: SIDE INFO BOX (NO BORDER) -->
+    <div style="width:350px; padding:10px; color:#8b4b5f;">
+
+        <h2 style="margin:0; font-size:30px;color:#8b4b5f;">2mm Crochet Hook</h2>
+
+        <p style="font-size:16px; margin-top:10px;">
+            A lightweight, smooth, and comfortable 2mm crochet hook perfect 
+            for lace designs, fine yarn projects, and delicate crafting.
+        </p>
+        <h3 style="font-size:22px; margin:10px 0; color:red;">
+    Price: ₹79 
+</h3>
+
+
+        <h3 style="font-size:20px; margin:15px 0 5px 0 ;">Available Colors:</h3>
+
+        <div style="display:flex; gap:10px; margin-bottom:20px;">
+            <span style="width:25px; height:25px; border-radius:50%; background:#ff6f6f;"></span>
+            <span style="width:25px; height:25px; border-radius:50%; background:#ffd36f;"></span>
+            <span style="width:25px; height:25px; border-radius:50%; background:#6fcf97;"></span>
+            <span style="width:25px; height:25px; border-radius:50%; background:#6fb4ff;"></span>
+        </div>
+
+        <button style="background-color:#8b4b5f; color:white; border:none; 
+                       padding:12px 30px; border-radius:25px; font-size:16px; 
+                       font-weight:bold; cursor:pointer;">
+            Add to Cart
+        </button>
+    </div>
+</div>
+
+
+<!-- SLIDER SCRIPT -->
+<script>
+    function moveSlide(index) {
+        document.getElementById("slideImages").style.transform = 
+            "translateX(" + (-250 * index) + "px)";
+    }
+</script>
+<br><br><br><br><br>
+
+
+
+
+    
+
+    <br>
+
+    <div style="text-align:center;">
+        <a class="sell-btn" 
+           href="#sell"
+           style="font-size:30px; font-weight:bold; color:#8b4b5f; 
+                  text-decoration:none; border:2px solid #8b4b5f; 
+                  padding:15px 35px; border-radius:50px;">
+            Want to sell with us ??
+        </a>
+    </div>
+
+    <br><br>
+
+    
+    <div style="background-color:#8b4b5f; color:white; text-align:center; padding:20px; font-size:20px;">
+        © 2025 Hooks & Yarns | Crafted with Love 🧶
+    </div>
+
+</body>
+</html>

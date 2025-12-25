@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hooks & Yarns - Products</title>
+
+    <style>
+        .nav-link:hover{        
+            color: #ffffff !important;
+             
+
+        }
+        .product-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
+        }
+        .product-box {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .sell-btn:hover {
+            background-color: #8b4b5f !important;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body bgcolor="#f5d5d5" style="margin: 0; font-family: Arial, sans-serif;"  style="position: relative; overflow-x: hidden;">
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.4;">
+        <span style="position: absolute; top: 10%; left: 5%; font-size: 40px;">🧶</span>
+        <span style="position: absolute; top: 25%; left: 85%; font-size: 35px;">🪡</span>
+        <span style="position: absolute; top: 40%; left: 15%; font-size: 30px;">🧵</span>
+        <span style="position: absolute; top: 15%; left: 70%; font-size: 45px;">🧶</span>
+        <span style="position: absolute; top: 55%; left: 80%; font-size: 38px;">🪡</span>
+        <span style="position: absolute; top: 70%; left: 10%; font-size: 42px;">🧶</span>
+        <span style="position: absolute; top: 35%; left: 90%; font-size: 33px;">🧵</span>
+        <span style="position: absolute; top: 80%; left: 75%; font-size: 36px;">🧶</span>
+        <span style="position: absolute; top: 60%; left: 50%; font-size: 40px;">🪡</span>
+        <span style="position: absolute; top: 20%; left: 40%; font-size: 35px;">🧵</span>
+        <span style="position: absolute; top: 85%; left: 30%; font-size: 38px;">🧶</span>
+        <span style="position: absolute; top: 45%; left: 65%; font-size: 32px;">🪡</span>
+        <span style="position: absolute; top: 75%; left: 55%; font-size: 37px;">🧵</span>
+        <span style="position: absolute; top: 30%; left: 25%; font-size: 34px;">🧶</span>
+        <span style="position: absolute; top: 90%; left: 60%; font-size: 39px;">🪡</span>
+    </div>
+    <div style="position: relative; z-index: 1;">
+
+
+    <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#f5d5d5"
+        style="border-bottom: 3px solid #8b4b5f;">
+        <tr>
+            <td align="left" style="padding: 20px;">
+                <h1 style="color: #8b4b5f; margin: 0;">
+                    Hooks & Yarns<span style="font-size: 55px; margin-left: 10px;">🧶</span>
+                </h1>
+                <p style="color:#8b4b5f ; font-style: italic; margin: 5px 0 10px 0;">
+                    Handcrafted with Love
+                </p>
+            </td>
+
+            <td align="center" style="padding: 25px;">
+                <p style="margin: 5px 0;">
+                    <a href="home.html" class="nav-link" style="color: #8b4b5f; 
+                       margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 30px;">Home</a>
+                    <span style="color: #8b4b5f; font-size: 30px; font-weight: bold;">|</span>
+
+                    <a href="products.html" class="nav-link" style="color: #8b4b5f;
+                       margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 30px;">Products</a>
+                    <span style="color: #8b4b5f; font-size: 30px; font-weight: bold;">|</span>
+
+                    <a href="about.html" class="nav-link" style="color: #8b4b5f;
+                       margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 30px;">About</a>
+                    <span style="color: #8b4b5f; font-size: 30px; font-weight: bold;">|</span>
+
+                    <a href="account.php"  class="nav-link" style="color: #8b4b5f;
+                       margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 30px;">Contact</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <style>
+    /* Simple slider */
+    .slider-container {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 10px;
+        border: 2px solid #8b4b5f;
+    }
+
+    .slides {
+        display: flex;
+        width: 500px; 
+        transition: transform 0.5s ease;
+    }
+
+    .slides img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .small-product-box:hover {
+        transform: scale(1.02);
+    }
+</style>
+<style>
+    .slider-container {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 10px;
+        border: 2px solid #8b4b5f;
+    }
+
+    .slides img {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+        background-color: white;
+        padding: 5px;
+    }
+</style>
+
+
+
+<div style="display:flex; justify-content:center; gap:30px; 
+            padding:20px; margin-top:30px;">
+
+    
+    <div class="small-product-box" 
+         style="width:260px; padding:10px;">
+
+        <div class="slider-container" id="sliderBox">
+            <div class="slides" id="slideImages">
+                <img src="https://static-01.daraz.com.np/p/16c26a2f0e3123ea924457fe3a5e4a71.jpg">
+                <img src="data:image/jpeg;base64,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">
+            </div>
+        </div>
+
+        <!-- Simple Buttons -->
+        <div style="text-align:center; margin-top:10px;">
+            <button onclick="moveSlide(0)" 
+                style="background:#8b4b5f; color:white; border:none; padding:5px 15px; border-radius:10px;">
+                1
+            </button>
+
+            <button onclick="moveSlide(1)" 
+                style="background:#8b4b5f; color:white; border:none; padding:5px 15px; border-radius:10px;">
+                2
+            </button>
+        </div>
+    </div>
+
+
+    <!-- RIGHT: SIDE INFO BOX (NO BORDER) -->
+    <div style="width:350px; padding:10px; color:#8b4b5f;">
+
+        <h2 style="margin:0; font-size:30px;color:#8b4b5f;">2mm Crochet Hook</h2>
+
+        <p style="font-size:16px; margin-top:10px;">
+            A lightweight, smooth, and comfortable 2mm crochet hook perfect 
+            for lace designs, fine yarn projects, and delicate crafting.
+        </p>
+        <h3 style="font-size:22px; margin:10px 0; color:red;">
+    Price: Rs.79 
+</h3>
+
+
+        <h3 style="font-size:20px; margin:15px 0 5px 0 ;">Available Colors:</h3>
+
+        <div style="display:flex; gap:10px; margin-bottom:20px;">
+            <span style="width:25px; height:25px; border-radius:50%; background:#ff6f6f;"></span>
+            <span style="width:25px; height:25px; border-radius:50%; background:#ffd36f;"></span>
+            <span style="width:25px; height:25px; border-radius:50%; background:#6fcf97;"></span>
+            <span style="width:25px; height:25px; border-radius:50%; background:#6fb4ff;"></span>
+        </div>
+
+        <button style="background-color:#8b4b5f; color:white; border:none; 
+                       padding:12px 30px; border-radius:25px; font-size:16px; 
+                       font-weight:bold; cursor:pointer;">
+            Add to Cart
+        </button>
+    </div>
+</div>
+
+
+<!-- SLIDER SCRIPT -->
+<script>
+    function moveSlide(index) {
+        document.getElementById("slideImages").style.transform = 
+            "translateX(" + (-250 * index) + "px)";
+    }
+</script>
+<br><br><br><br><br>
+
+
+
+
+    
+
+    <br>
+
+    <br><br>
+
+    
+    <div style="background-color:#8b4b5f; color:white; text-align:center; padding:20px; font-size:20px;">
+        © 2025 Hooks & Yarns | Crafted with Love 🧶
+    </div>
+
+</body>
+</html>
